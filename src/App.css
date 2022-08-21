@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+
+.App{
+  padding: 20px;
+}
+h1{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+}
+button{
+  padding: 8px 16px;
+  background-color: #e0e0e0;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  margin:10px;
+  font-family: "Noto Sans",sans-serif;
+}
+button:hover,button:focus{
+  background-color: #aeaeae;
+}
+button.outline-variant{
+  background: rgb(255, 255, 255);
+  border: 1px solid #3D5AFE;
+  color: #3D5AFE;
+  box-shadow: none;
+}
+button.outline-variant:hover,.outline-variant:focus{
+  background-color: rgba(41, 98, 255, 0.1);
+}
+.button-material-icons{
+  font-size: 14px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+.start-icon{
+  margin-left: 0;
+}
+.end-icon{
+  margin-right: 0;
+}
+button.sm{
+  padding: 6px 12px;
+}
+button.md{
+  padding: 8px 16px;
+}
+button.lg{
+  padding:11px 22px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button.text-variant{
+  background: none;
+  border: none;
+  color: #3D5AFE;
+  box-shadow: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button.text-variant:hover,.text-variant:focus{
+  background-color: rgba(41, 98, 255, 0.1);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button.text-variant.disabled-btn{
+  border: none;
+  background:none;
+  color: #9E9E9E;
+}
+button.disable-shadow{
+  box-shadow: none;
+}
+button.disabled-btn{
+  background-color: #E0E0E0;
+  border: none;
+  color: #9E9E9E;
+}
+button.primary{
+  background-color: #2962FF;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button.primary:hover, button.primary:focus{
+  background-color: #0039CB;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.secondary{
+  background-color: #455A64;
+  color: white;
+}
+button.secondary:hover, button.secondary:focus{
+  background-color: #1C313A;
+}
+button.danger{
+  background-color: #D32F2F;
+  color: white;
+}
+button.danger:hover, button.danger:focus{
+  background-color: #9A0007;
+}
+.button-row-2{
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.button-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+span{
+  white-space: nowrap;
+  font-family: 'Ubuntu Mono', monospace;
 }
